@@ -1,16 +1,22 @@
-# opencodejsonmanager
+# occ-manager
 
-[![npm](https://img.shields.io/npm/v/opencodejsonmanager)](https://www.npmjs.com/package/opencodejsonmanager)
-[![node](https://img.shields.io/node/v/opencodejsonmanager)](https://nodejs.org)
-[![license](https://img.shields.io/npm/l/opencodejsonmanager)](LICENSE)
+[![npm](https://img.shields.io/npm/v/@spacatty/occ-manager)](https://www.npmjs.com/package/@spacatty/occ-manager)
+[![node](https://img.shields.io/node/v/@spacatty/occ-manager)](https://nodejs.org)
+[![license](https://img.shields.io/npm/l/@spacatty/occ-manager)](LICENSE)
 
 A local web UI for your [OpenCode](https://opencode.ai) config. Paste an OpenAI-compatible endpoint, pick models from a list, and get correct `opencode.json` entries with context limits, pricing and capabilities already filled in.
 
 ```bash
-npx opencodejsonmanager
+npx @spacatty/occ-manager
 ```
 
 That's it: it finds your config, starts a server on `127.0.0.1` and opens your browser. Works on macOS, Linux and Windows with Node.js 18+. No dependencies.
+
+Or install it globally and run `occ-manager`:
+
+```bash
+npm i -g @spacatty/occ-manager
+```
 
 ![Providers tab](https://raw.githubusercontent.com/spacatty/opencode-json-manager/main/docs/screenshot.jpg)
 
@@ -44,7 +50,7 @@ By default it opens the first existing file that already contains providers. Run
 ## Options
 
 ```
-npx opencodejsonmanager [options]
+npx @spacatty/occ-manager [options]   # or: occ-manager [options]
 
 -c, --config <path>   Config file to edit (default: auto-detect)
 -p, --port <port>     Port (default 4747, falls back to a free one)

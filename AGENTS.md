@@ -4,7 +4,7 @@ Instructions for AI coding agents (OpenCode, Claude Code, Codex, etc.) working o
 
 ## What this is
 
-`opencodejsonmanager` is a zero-dependency Node (>=18) CLI, run with `npx opencodejsonmanager`. It starts a local web UI that edits OpenCode config files (`opencode.json` / `opencode.jsonc`), mainly to add custom OpenAI-compatible providers and their models.
+`@spacatty/occ-manager` (command `occ-manager`) is a zero-dependency Node (>=18) CLI, run with `npx @spacatty/occ-manager`. It starts a local web UI that edits OpenCode config files (`opencode.json` / `opencode.jsonc`), mainly to add custom OpenAI-compatible providers and their models.
 
 - `bin/cli.js`: arg parsing, port fallback, cross-platform browser opening
 - `src/server.js`: `node:http` server bound to 127.0.0.1, token + Host-header checks

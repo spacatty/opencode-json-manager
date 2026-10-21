@@ -6,11 +6,11 @@ const { createServer } = require('../src/server');
 const pkg = require('../package.json');
 
 const HELP = `
-opencodejsonmanager v${pkg.version}
+occ-manager v${pkg.version}
 Web UI for editing your OpenCode config (opencode.json / opencode.jsonc).
 
 Usage:
-  npx opencodejsonmanager [options]
+  npx @spacatty/occ-manager [options]
 
 Options:
   -c, --config <path>   Config file to edit (default: auto-detect)
@@ -72,7 +72,7 @@ async function main() {
 
   const major = Number(process.versions.node.split('.')[0]);
   if (major < 18) {
-    console.error('opencodejsonmanager requires Node.js 18 or newer.');
+    console.error('occ-manager requires Node.js 18 or newer.');
     process.exit(1);
   }
 

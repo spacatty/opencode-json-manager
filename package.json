@@ -1,5 +1,5 @@
 {
-  "name": "opencodejsonmanager",
+  "name": "@spacatty/occ-manager",
   "version": "0.1.0",
   "description": "Web UI to edit your OpenCode config and add custom OpenAI-compatible model endpoints, with automatic model discovery.",
   "keywords": [
@@ -21,8 +21,7 @@
   "license": "MIT",
   "author": "spacatty",
   "bin": {
-    "opencodejsonmanager": "bin/cli.js",
-    "opencode-json-manager": "bin/cli.js"
+    "occ-manager": "bin/cli.js"
   },
   "files": [
     "bin",
@@ -41,5 +40,8 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
