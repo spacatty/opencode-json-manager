@@ -1,0 +1,45 @@
+{
+  "name": "opencodejsonmanager",
+  "version": "0.1.0",
+  "description": "Web UI to edit your OpenCode config and add custom OpenAI-compatible model endpoints, with automatic model discovery.",
+  "keywords": [
+    "opencode",
+    "config",
+    "llm",
+    "openai-compatible",
+    "models",
+    "cli"
+  ],
+  "homepage": "https://github.com/spacatty/opencode-json-manager#readme",
+  "bugs": {
+    "url": "https://github.com/spacatty/opencode-json-manager/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spacatty/opencode-json-manager.git"
+  },
+  "license": "MIT",
+  "author": "spacatty",
+  "bin": {
+    "opencodejsonmanager": "bin/cli.js",
+    "opencode-json-manager": "bin/cli.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "public",
+    "schema",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/cli.js",
+    "check-schema": "node scripts/check-schema.js",
+    "update-schema": "node scripts/check-schema.js --update",
+    "test": "node scripts/smoke-test.js",
+    "prepublishOnly": "npm run check-schema"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
